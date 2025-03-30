@@ -1,0 +1,21 @@
+.credentialContainer{
+    width: 60vw;
+}
+.credentialsTable{
+    width: 95%;
+}
+
+@media screen and (max-width: 800px) {
+    .credentialContainer{
+        width: 90vw;
+    }
+    .credentialsTable{
+        width: 95%;
+        display: flex;
+    }
+    .credentialsElements{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

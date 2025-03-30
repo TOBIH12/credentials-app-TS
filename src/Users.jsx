@@ -31,12 +31,12 @@ useEffect(() => {
 
   return (
     <div className='d-flex vh-100 bg-primary justify-content-center align-items-center'>
-     <div className='w-50 bg-white rounded p-3'>
+     <div className='bg-white rounded p-3 credentialContainer'>
         <Link to='/create' className='btn btn-success'>Add +</Link>
         <Link to={`/logout`} className='btn btn-danger ms-2'>Logout</Link>
-        <table className='table'>
+        <table className='table credentialsTable'>
             <thead>
-                <tr>
+                <tr className='credentialsElements'>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Age</th>
@@ -46,7 +46,7 @@ useEffect(() => {
             <tbody>
                 {
                     users.map((user) => {
-                   return     <tr key={user._id}>
+                   return     <tr key={user._id} className='credentialsElements'>
                             <td>{user.name}</td>
                             <td>{user.email}</td>
                             <td>{user.age}</td>
